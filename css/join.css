@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.sec_top{height: 400px;background-image: url(../images/img_top5.jpg); background-size: cover;
+    background-position: center;padding-top:180px;}
+.sec_top>.content,.sec_form>.content{width: 95%;max-width: 800px;}
+.sec_top h2{color: white; font-weight: normal; font-size: 2.0em;}
+.sec_top hr,.sec_form hr{background-color: white;height: 1px; width: 100%; margin-bottom: 15px;}
+.sec_top p{color: white;}
+
+.sec_form{margin: 30px 0;}
+.sec_form label,.sec_form span{font-size: 1.1em;}
+.sec_form span:first-of-type{margin-right: 15px;}
+.sec_form hr:first-of-type{background-color: black; height: 2px; margin: 15px 0;}
+.sec_form hr:last-of-type{background-color: #ccc; margin: 15px 0;}
+.sec_form .tit_label{display: inline-block; width: 150px; font-size: 1.2em;}
+.sec_form .must::before{content: '*'; display: inline-block; color: red; margin-right: 5px;}
+.sec_form h3{color: red;}
+.sec_form input{border: 1px solid #ccc; padding: 6px 10px; font-size: 1.1em;}
+.sec_form input[type="text"],.sec_form input[type="password"]{width: 100%;}
+.sec_form input[id*='e-']{width: 200px;}
+.sec_form input[type='radio'],.sec_form input[type='checkbox']{width: auto;}
+.sec_form textarea{border: 1px solid #ccc; width: 100%;padding: 6px 10px;}
+.sec_form button{padding: 10px 30px; background-color:#384d75;font-size: 1.3em; color: white;}
+.sec_form .button_box{text-align: center;}
+.sec_form .no_must::before{content:''; margin-right: 0px}
+
+@media(min-width:801px){
+    .sec_form input[type="text"],.sec_form input[type="password"]{width: 80%;}
+    .sec_form input[id*='e-']{width: 200px;}
+    .sec_form .no_must::before{content: '*'; display: inline-block; color: white; margin-right: 5px;}
+
+}
